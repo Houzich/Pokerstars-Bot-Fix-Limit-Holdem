@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="P_Logic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CurrentCard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None None</Value>
+    </Setting>
+    <Setting Name="DD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None None</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

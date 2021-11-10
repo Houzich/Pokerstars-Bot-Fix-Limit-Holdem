@@ -1,0 +1,5 @@
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\bin\x64\Debug\StringEnumClass.dll
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\bin\x64\Debug\StringEnumClass.pdb
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\x64\Debug\StringEnumClass.csproj.CoreCompileInputs.cache
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\x64\Debug\StringEnumClass.dll
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\x64\Debug\StringEnumClass.pdb

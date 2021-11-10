@@ -1,0 +1,11 @@
+D:\BOT\Companents\Table_Start_Hands\bin\x64\Release\Table_Start_Hands.dll
+D:\BOT\Companents\Table_Start_Hands\bin\x64\Release\Table_Start_Hands.pdb
+D:\BOT\Companents\Table_Start_Hands\bin\x64\Release\BotClass.dll
+D:\BOT\Companents\Table_Start_Hands\bin\x64\Release\BotClass.pdb
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csprojAssemblyReference.cache
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.Table_Start_Hands.resources
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csproj.GenerateResource.cache
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csproj.CoreCompileInputs.cache
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csproj.CopyComplete
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.dll
+D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.pdb

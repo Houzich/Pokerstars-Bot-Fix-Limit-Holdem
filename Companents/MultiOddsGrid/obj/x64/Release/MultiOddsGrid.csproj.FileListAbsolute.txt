@@ -1,0 +1,8 @@
+D:\BOT\Companents\MultiOddsGrid\bin\x64\Release\MultiOddsGrid.dll
+D:\BOT\Companents\MultiOddsGrid\bin\x64\Release\MultiOddsGrid.pdb
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.UserControl1.resources
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.csproj.GenerateResource.cache
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.csproj.CoreCompileInputs.cache
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.dll
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.pdb
+D:\BOT\Companents\MultiOddsGrid\obj\x64\Release\MultiOddsGrid.csprojAssemblyReference.cache

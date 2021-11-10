@@ -1,0 +1,16 @@
+D:\BOT\My_Math\LogicClass\bin\Release\LogicClass.dll
+D:\BOT\My_Math\LogicClass\bin\Release\LogicClass.pdb
+D:\BOT\My_Math\LogicClass\bin\Release\BotClass.dll
+D:\BOT\My_Math\LogicClass\bin\Release\CardClass.dll
+D:\BOT\My_Math\LogicClass\bin\Release\HandEvaluator.dll
+D:\BOT\My_Math\LogicClass\bin\Release\StringEnumClass.dll
+D:\BOT\My_Math\LogicClass\bin\Release\BotClass.pdb
+D:\BOT\My_Math\LogicClass\bin\Release\HandEvaluator.pdb
+D:\BOT\My_Math\LogicClass\bin\Release\HandEvaluator.xml
+D:\BOT\My_Math\LogicClass\bin\Release\CardClass.pdb
+D:\BOT\My_Math\LogicClass\bin\Release\StringEnumClass.pdb
+D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.csprojAssemblyReference.cache
+D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.csproj.CoreCompileInputs.cache
+D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.csproj.CopyComplete
+D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.dll
+D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.pdb

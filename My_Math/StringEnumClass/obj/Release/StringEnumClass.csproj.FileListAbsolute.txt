@@ -1,0 +1,18 @@
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.dll
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.pdb
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csproj.CoreCompileInputs.cache
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.dll
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.pdb
+C:\Users\1234\Desktop\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csprojResolveAssemblyReference.cache
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.dll
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.pdb
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csprojResolveAssemblyReference.cache
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csproj.CoreCompileInputs.cache
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.dll
+E:\Descop 2.20.2018\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.pdb
+D:\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.dll
+D:\BOT\My_Math\StringEnumClass\bin\Release\StringEnumClass.pdb
+D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csproj.CoreCompileInputs.cache
+D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.dll
+D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.pdb
+D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csprojAssemblyReference.cache

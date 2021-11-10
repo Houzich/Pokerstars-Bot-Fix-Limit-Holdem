@@ -1,0 +1,9 @@
+D:\BOT\My_Math\CardClass\bin\Release\CardClass.dll
+D:\BOT\My_Math\CardClass\bin\Release\CardClass.pdb
+D:\BOT\My_Math\CardClass\bin\Release\StringEnumClass.dll
+D:\BOT\My_Math\CardClass\bin\Release\StringEnumClass.pdb
+D:\BOT\My_Math\CardClass\obj\Release\CardClass.csprojAssemblyReference.cache
+D:\BOT\My_Math\CardClass\obj\Release\CardClass.csproj.CoreCompileInputs.cache
+D:\BOT\My_Math\CardClass\obj\Release\CardClass.csproj.CopyComplete
+D:\BOT\My_Math\CardClass\obj\Release\CardClass.dll
+D:\BOT\My_Math\CardClass\obj\Release\CardClass.pdb
