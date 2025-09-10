@@ -1,4 +1,4 @@
-﻿namespace My_Math.Properties {
+namespace My_Math.Properties {
     
     
     // This class allows you to handle specific events on the settings class:
@@ -26,3 +26,4 @@
         }
     }
 }
+

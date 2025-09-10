@@ -1,4 +1,4 @@
-锘縰sing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,8 +57,8 @@ namespace My_Math
         public WARNING_STATUS Warning_Status { get; set; } = WARNING_STATUS.INIT;
         public int Opponents_Stage = 0;
         public int Opponents_Game = 0;
-        public double Call_小riterion = new double();
-        public double Raise_小riterion = new double();
+        public double Call_裷iterion = new double();
+        public double Raise_裷iterion = new double();
         public double[] My_Odds = new double[12];
         public double[] Opponents_Odds = new double[12];
         public Game()
@@ -100,8 +100,8 @@ namespace My_Math
         /**/
         public void Set_From_Settings(SettingsClass.Settings sett)
         {
-           Call_小riterion = sett.Game.Call_小riterion;
-           Raise_小riterion = sett.Game.Raise_小riterion;
+           Call_裷iterion = sett.Game.Call_裷iterion;
+           Raise_裷iterion = sett.Game.Raise_裷iterion;
         }
         /*##################################################################################################################*/
         /*##################################################################################################################*/
@@ -137,8 +137,8 @@ namespace My_Math
             logic.Opponents_Stage = Opponents_Stage;
             logic.Opponents_Game = Opponents_Game;
 
-            logic.Call_小riterion = Call_小riterion;
-            logic.Raise_Criterion = Raise_小riterion;
+            logic.Call_裷iterion = Call_裷iterion;
+            logic.Raise_Criterion = Raise_裷iterion;
             logic.Stage = Stage;
 
             for (int num_plyr = 0; num_plyr < 6; num_plyr++)
@@ -300,3 +300,4 @@ namespace My_Math
         }
     }
 }
+

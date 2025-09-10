@@ -2793,3 +2793,4 @@ void UART_Wakeup_AddressConfig(UART_HandleTypeDef *huart, UART_WakeUpTypeDef Wak
   */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

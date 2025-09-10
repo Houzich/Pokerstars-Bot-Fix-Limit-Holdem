@@ -9,3 +9,4 @@ D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csproj.CoreCom
 D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.csproj.CopyComplete
 D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.dll
 D:\BOT\Companents\Table_Start_Hands\obj\Release\Table_Start_Hands.pdb
+

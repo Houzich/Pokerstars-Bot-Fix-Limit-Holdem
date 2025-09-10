@@ -117,3 +117,4 @@ extern USBD_DescriptorsTypeDef FS_Desc;
 * @}
 */ 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

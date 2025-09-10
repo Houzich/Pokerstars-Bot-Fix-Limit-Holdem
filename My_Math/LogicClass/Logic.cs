@@ -1,4 +1,4 @@
-п»їusing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -163,7 +163,7 @@ namespace LogicClass
         public STAGE_ACTION Stage_Action { get; set; } = STAGE_ACTION.INIT;
         public FINT_STATUS Fint { get; set; } = FINT_STATUS.INIT;
 
-        public double Call_РЎriterion { get; set; }
+        public double Call_Сriterion { get; set; }
         public double Raise_Criterion { get; set; }
 
         public List<string> Hand_Cards_For_Fold = new List<string>();
@@ -185,7 +185,7 @@ namespace LogicClass
             Bets = new BetsClass();
             Stage = STAGE_STATUS.INIT;
             Stage_Action = STAGE_ACTION.INIT;           
-            Call_РЎriterion = 0;
+            Call_Сriterion = 0;
             Raise_Criterion = 0;
 
             //Saved
@@ -263,7 +263,7 @@ namespace LogicClass
 
             if ((this.My_Odds[9] - this.My_Odds[11]) * 100 > Raise_Criterion) Stage_Action = STAGE_ACTION.RAISE;
             else if (Bets.Call == 0) Stage_Action = STAGE_ACTION.CHECK;
-            else if ((this.My_Odds[9] - this.My_Odds[10]) * 100 > Call_РЎriterion) Stage_Action = STAGE_ACTION.CALL;
+            else if ((this.My_Odds[9] - this.My_Odds[10]) * 100 > Call_Сriterion) Stage_Action = STAGE_ACTION.CALL;
             else Stage_Action = STAGE_ACTION.FOLD;
 
 
@@ -510,7 +510,7 @@ namespace LogicClass
             for (int i = 0; i < amount_card; i++)
                 rank[i] = (int)Hand_Card[2 + i].Rank;
 
-            var unique = rank.Distinct(); //С‚РѕР»СЊРєРѕ СѓРЅРёРєР°Р»СЊРЅС‹Рµ С‡РёСЃР»Р°
+            var unique = rank.Distinct(); //только уникальные числа
             if (unique.Count() < 4) return false;
             rank = new int[unique.Count()];
             int t = 0; foreach (int i in unique) rank[t++] = i;
@@ -546,8 +546,8 @@ namespace LogicClass
 
         static public bool If_Flush_Draw_On_Board(CardClass.Card[] cards, STAGE_STATUS stage)
         {
-            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 РєР°СЂС‚С‹ С„Р»РѕРїР°
-            int amount_batch_4card = amount_card_on_board - 4; //РєРѕР»-РІРѕ РїР°С‡РµРє РїРѕ 5 РєР°СЂС‚
+            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 карты флопа
+            int amount_batch_4card = amount_card_on_board - 4; //кол-во пачек по 5 карт
 
             CardClass.Card[] board_cards = new CardClass.Card[amount_card_on_board];
             for (int i = 0; i < amount_card_on_board; i++) board_cards[i] = cards[i + 2];
@@ -564,7 +564,7 @@ namespace LogicClass
         public string If_Flush(CardClass.Card[] cards, STAGE_STATUS stage)
         {
 
-            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 РєР°СЂС‚С‹ С„Р»РѕРїР°
+            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 карты флопа
             int amount_card = amount_card_on_board + 2;
 
             CardClass.Card[] hand_cards = new CardClass.Card[amount_card];
@@ -580,14 +580,14 @@ namespace LogicClass
             else if (num_diamonds > 4) flush_cards = hand_cards.Where(x => x.Suit == CardClass.SUIT.Diamonds).ToArray();
             else if (num_hearts > 4) flush_cards = hand_cards.Where(x => x.Suit == CardClass.SUIT.Hearts).ToArray();
             else if (num_spades > 4) flush_cards = hand_cards.Where(x => x.Suit == CardClass.SUIT.Spades).ToArray();
-            else return "No Flush"; //РЅРµС‚ flush РїРѕР»СЋР±РѕРјСѓ
+            else return "No Flush"; //нет flush полюбому
 
             Array.Sort((CardClass.Card[])flush_cards, CardClass.Card.Sort_By_SuitRank_Decrease());
 
             bool my_cards_be = false;
             for (int j = 0; j < 5; j++) if (flush_cards[j] == cards[0] || flush_cards[j] == cards[1]) my_cards_be = true;
 
-            if (!my_cards_be) return "Flush On Board Not My"; //Flush РµСЃС‚СЊ, РЅРѕ РЅРµ РјРѕР№
+            if (!my_cards_be) return "Flush On Board Not My"; //Flush есть, но не мой
 
 
             string str = "";
@@ -652,8 +652,8 @@ namespace LogicClass
                 if (str == " High" || str == " Low") message += str;
                 return message;
             }
-            //РєРѕРіРґР° Сѓ РјРµРЅСЏ РЅРёР¶РЅРёРµ РєР°СЂС‚С‹ Рё РЅР° РґРѕСЃРєРµ Flush
-            if (str == "") return "Flush On Board Not My"; //Flush РµСЃС‚СЊ, РЅРѕ РЅРµ РјРѕР№
+            //когда у меня нижние карты и на доске Flush
+            if (str == "") return "Flush On Board Not My"; //Flush есть, но не мой
 
             return "No Flush";
         }
@@ -691,12 +691,12 @@ namespace LogicClass
         public string If_Straight(CardClass.Card[] cards, STAGE_STATUS stage)
         {
 
-            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 РєР°СЂС‚С‹ С„Р»РѕРїР°
+            int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 карты флопа
             int amount_card = amount_card_on_board + 2;
 
-            HashSet<CardClass.Card> unique_cards = new HashSet<CardClass.Card>(cards, new CardClass.Card.FilterByRank()); // Р’СЃРµ Р·РЅР°С‡РµРЅРёСЏ РЅРѕ РїРѕ РѕРґРЅРѕРјСѓ СЂР°Р·Сѓ
+            HashSet<CardClass.Card> unique_cards = new HashSet<CardClass.Card>(cards, new CardClass.Card.FilterByRank()); // Все значения но по одному разу
             unique_cards.RemoveWhere(item => item.Rank == CardClass.RANK.None); //delate cards None
-            if (unique_cards.Count < 5) return "No Straight"; //РЅРµС‚ СЃС‚СЂРёС‚Р° РїРѕР»СЋР±РѕРјСѓ
+            if (unique_cards.Count < 5) return "No Straight"; //нет стрита полюбому
 
             int[][] straight_arr = new int[10][];
             straight_arr[0] = new int[5] { (int)CardClass.RANK.Ten, (int)CardClass.RANK.Jack, (int)CardClass.RANK.Queen, (int)CardClass.RANK.King, (int)CardClass.RANK.Ace };
@@ -726,15 +726,15 @@ namespace LogicClass
                 if (straight_be) { straight_arr_be = straight_arr[i]; break; }
                 }
 
-            if (straight_arr_be[0] == 0) return "No Straight"; //РЅРµС‚ СЃС‚СЂРёС‚Р°
+            if (straight_arr_be[0] == 0) return "No Straight"; //нет стрита
 
             string str = "";
             int pos_card0 = Array.IndexOf(straight_arr_be, (int)cards[0].Rank);
             int pos_card1 = Array.IndexOf(straight_arr_be, (int)cards[1].Rank);
 
-            if (pos_card0 != -1 && Array.Find(cards, p => (int)p.Rank == (int)cards[0].Rank && p != cards[0] && p != cards[1]) == null) //Рё РЅРµС‚ РЅР° РґРѕСЃРєРµ С‚Р°РєРѕР№ Р¶Рµ РєР°СЂС‚С‹
+            if (pos_card0 != -1 && Array.Find(cards, p => (int)p.Rank == (int)cards[0].Rank && p != cards[0] && p != cards[1]) == null) //и нет на доске такой же карты
                 str += (pos_card0 + 1).ToString();
-            if (pos_card1 != -1 && Array.Find(cards, p => (int)p.Rank == (int)cards[1].Rank && p != cards[0] && p != cards[1]) == null) //Рё РЅРµС‚ РЅР° РґРѕСЃРєРµ С‚Р°РєРѕР№ Р¶Рµ РєР°СЂС‚С‹
+            if (pos_card1 != -1 && Array.Find(cards, p => (int)p.Rank == (int)cards[1].Rank && p != cards[0] && p != cards[1]) == null) //и нет на доске такой же карты
                 str += (pos_card1 + 1).ToString();
 
             if (str != "")
@@ -767,13 +767,13 @@ namespace LogicClass
         //public string If_Straight(CardClass.Card[] cards, STAGE_STATUS stage)
         //{
 
-        //    int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 РєР°СЂС‚С‹ С„Р»РѕРїР°
+        //    int amount_card_on_board = 3 + (int)stage - (int)STAGE_STATUS.FLOP; //+3 карты флопа
         //    int amount_card = amount_card_on_board + 2;
 
-        //    HashSet<CardClass.Card> unique_cards = new HashSet<CardClass.Card>(cards, new CardClass.Card.FilterByRank()); // Р’СЃРµ Р·РЅР°С‡РµРЅРёСЏ РЅРѕ РїРѕ РѕРґРЅРѕРјСѓ СЂР°Р·Сѓ
+        //    HashSet<CardClass.Card> unique_cards = new HashSet<CardClass.Card>(cards, new CardClass.Card.FilterByRank()); // Все значения но по одному разу
         //    unique_cards.RemoveWhere(item => item.Rank == CardClass.RANK.None); //delate cards None
 
-        //    if (unique_cards.Count < 5) return "No Straight"; //РЅРµС‚ СЃС‚СЂРёС‚Р° РїРѕР»СЋР±РѕРјСѓ
+        //    if (unique_cards.Count < 5) return "No Straight"; //нет стрита полюбому
 
         //    CardClass.Card[] straight_batch = new CardClass.Card[unique_cards.Count()];
 
@@ -784,7 +784,7 @@ namespace LogicClass
         //        else if (cards[1].Rank == card.Rank) { straight_batch[cnt++] = cards[1]; my_cards_be = true; }
         //        else straight_batch[cnt++] = card;
         //    }
-        //    int amount_batch_5card = cnt - 5; //РєРѕР»-РІРѕ РїР°С‡РµРє РїРѕ 5 РєР°СЂС‚
+        //    int amount_batch_5card = cnt - 5; //кол-во пачек по 5 карт
         //    Array.Sort((CardClass.Card[])straight_batch, CardClass.Card.Sort_By_Rank_Increase());
 
 
@@ -821,9 +821,9 @@ namespace LogicClass
         //        if (sum == 10) straight_be[i] = true;               
         //    }
 
-        //    if (Array.IndexOf(straight_be, true) != -1 && !my_cards_be) return "Straight On Board Not My"; //СЃС‚СЂРёС‚ РµСЃС‚СЊ, РЅРѕ РЅРµ РјРѕР№
+        //    if (Array.IndexOf(straight_be, true) != -1 && !my_cards_be) return "Straight On Board Not My"; //стрит есть, но не мой
 
-        //    if (Array.IndexOf(straight_be, true) != -1)//Р•СЃР»Рё СЃС‚СЂРёС‚ РµСЃС‚СЊ
+        //    if (Array.IndexOf(straight_be, true) != -1)//Если стрит есть
         //    {
         //        bool first_straight_flash = false;
         //        for (int i = 4 - 1; i >= 1; i--)
@@ -890,8 +890,8 @@ namespace LogicClass
         //                    if (str == "1") message += " Low One Card";
         //                    return message;
         //                }
-        //                //РєРѕРіРґР° Сѓ РјРµРЅСЏ РЅРёР¶РЅРёРµ РєР°СЂС‚С‹ Рё РЅР° РґРѕСЃРєРµ СЃС‚СЂРёС‚
-        //                if (str == "") return "Straight On Board Not My"; //СЃС‚СЂРёС‚ РµСЃС‚СЊ, РЅРѕ РЅРµ РјРѕР№
+        //                //когда у меня нижние карты и на доске стрит
+        //                if (str == "") return "Straight On Board Not My"; //стрит есть, но не мой
 
         //            }
         //        }
@@ -902,3 +902,4 @@ namespace LogicClass
 
     }
 }
+

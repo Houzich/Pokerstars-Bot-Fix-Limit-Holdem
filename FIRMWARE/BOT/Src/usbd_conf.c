@@ -771,3 +771,4 @@ void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

@@ -1,4 +1,4 @@
-锘縰sing System;
+using System;
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Text;
@@ -378,8 +378,8 @@ namespace SettingsClass
         [EditorBrowsable(EditorBrowsableState.Always)]
         public class _Game
         {
-            public double Call_小riterion { get; set; } = new double();
-            public double Raise_小riterion { get; set; } = new double();
+            public double Call_裷iterion { get; set; } = new double();
+            public double Raise_裷iterion { get; set; } = new double();
             public Class_Start_Hands[] Start_Hands { get; set; } = new Class_Start_Hands[6];
             public _Game()
             {
@@ -403,12 +403,12 @@ namespace SettingsClass
             public My_Course My_Course_Call { get; set; } = new My_Course();
             public My_Course Accelerate_Fold { get; set; } = new My_Course();
             public My_Course Accelerate_Check { get; set; } = new My_Course();
-            public int 小ard_On_Board_Distance { get; set; } = new int();
+            public int 補rd_On_Board_Distance { get; set; } = new int();
             public int Card_Player_Distance { get; set; } = new int();
             public int Card_Suit_Rank_Distance_X { get; set; } = new int();
             public int Card_Suit_Rank_Distance_Y { get; set; } = new int();
-            public int 小ard_Rank_Width { get; set; } = new int();
-            public int 小ard_Rank_Height { get; set; } = new int();
+            public int 補rd_Rank_Width { get; set; } = new int();
+            public int 補rd_Rank_Height { get; set; } = new int();
             public int Card_Back_Color_Distance_X { get; set; } = new int();
             public int Card_Back_Color_Distance_Y { get; set; } = new int();
             public Color Suit_Hearts_Color { get; set; } = new Color();
@@ -451,8 +451,8 @@ namespace SettingsClass
 
         public Settings(string path)
         {
-            Game.Call_小riterion = 0;
-            Game.Raise_小riterion = 5;
+            Game.Call_裷iterion = 0;
+            Game.Raise_裷iterion = 5;
 
             Game.Start_Hands[0].Interval_Scroll = 35;
             Game.Start_Hands[1].Interval_Scroll = 35;
@@ -494,11 +494,11 @@ namespace SettingsClass
 
             Graphic_Table.Rank_Black_White_Coeff = 205;
 
-            Graphic_Table.小ard_Rank_Width = 18;
-            Graphic_Table.小ard_Rank_Height = 19;
+            Graphic_Table.補rd_Rank_Width = 18;
+            Graphic_Table.補rd_Rank_Height = 19;
             Graphic_Table.Card_Suit_Rank_Distance_X = 0;
             Graphic_Table.Card_Suit_Rank_Distance_Y = -33;
-            Graphic_Table.小ard_On_Board_Distance = 54;
+            Graphic_Table.補rd_On_Board_Distance = 54;
             Graphic_Table.Card_Back_Color_Distance_X = 3;
             Graphic_Table.Card_Back_Color_Distance_Y = -5;
             Graphic_Table.Card_Player_Distance = 51;
@@ -625,10 +625,10 @@ namespace SettingsClass
             for (int i = 0; i < 5; i++)
             {
                 Board board = Graphic_Table.Board;
-                Point p = new Point(board.Card[0].Pixel.Suit.Point.X + Graphic_Table.小ard_On_Board_Distance * i, board.Card[0].Pixel.Suit.Point.Y);
+                Point p = new Point(board.Card[0].Pixel.Suit.Point.X + Graphic_Table.補rd_On_Board_Distance * i, board.Card[0].Pixel.Suit.Point.Y);
                 board.Card[i].Pixel.Suit.Point = p;
                 board.Card[i].Pixel.Back.Point = new Point(p.X + Graphic_Table.Card_Back_Color_Distance_X, p.Y + Graphic_Table.Card_Back_Color_Distance_Y);
-                board.Card[i].Rectangle_Rank = new Rectangle(p.X + Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Graphic_Table.Card_Suit_Rank_Distance_Y, Graphic_Table.小ard_Rank_Width, Graphic_Table.小ard_Rank_Height);
+                board.Card[i].Rectangle_Rank = new Rectangle(p.X + Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Graphic_Table.Card_Suit_Rank_Distance_Y, Graphic_Table.補rd_Rank_Width, Graphic_Table.補rd_Rank_Height);
             }
             //--------------------------------------------------------------------------------------
             //--------------------------------------------------------------------------------------
@@ -641,7 +641,7 @@ namespace SettingsClass
                     Point p = new Point(player[i].Card[0].Pixel.Suit.Point.X + Graphic_Table.Card_Player_Distance * ii, player[i].Card[0].Pixel.Suit.Point.Y);
                     player[i].Card[ii].Pixel.Suit.Point = p;
                     player[i].Card[ii].Pixel.Back.Point = new Point(p.X + Graphic_Table.Card_Back_Color_Distance_X, p.Y + Graphic_Table.Card_Back_Color_Distance_Y);
-                    player[i].Card[ii].Rectangle_Rank = new Rectangle(p.X + Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Graphic_Table.Card_Suit_Rank_Distance_Y, Graphic_Table.小ard_Rank_Width, Graphic_Table.小ard_Rank_Height);
+                    player[i].Card[ii].Rectangle_Rank = new Rectangle(p.X + Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Graphic_Table.Card_Suit_Rank_Distance_Y, Graphic_Table.補rd_Rank_Width, Graphic_Table.補rd_Rank_Height);
                 }
             //Bets Players
             for (int i = 0; i < 6; i++)

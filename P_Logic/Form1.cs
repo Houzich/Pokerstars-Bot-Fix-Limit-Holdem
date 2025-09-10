@@ -1,4 +1,4 @@
-п»ї
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,9 +67,9 @@ namespace P_Logic
 
         private void DropDownDeckImage(object sender, MouseEventArgs e)
         {
-            //РџРѕР»СѓС‡Р°РµРј СЃСЃС‹Р»РєСѓ РЅР° РєРЅРѕРїРєСѓ, РЅР° РєРѕС‚РѕСЂСѓСЋ РЅР°Р¶Р°Р»Рё
+            //Получаем ссылку на кнопку, на которую нажали
             PictureBox ClickImg = (PictureBox)sender;
-            //РЎРѕР·РґР°РµРј РЅРѕРІСѓСЋ РєРЅРѕРїРєСѓ
+            //Создаем новую кнопку
             DropDownAllClose();
             Panel DropDownPanel = new Panel();
             DropDownPanel.Tag = "DropDownPanel";
@@ -158,7 +158,7 @@ namespace P_Logic
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            //this.SetStyle(ControlStyles.SupportsTransparentBackColor, true); // РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ
+            //this.SetStyle(ControlStyles.SupportsTransparentBackColor, true); // в конструкторе
             //Form1 F = new Form1();
             //F.Opacity = 99;
             //pictureBox1.Parent = F;
@@ -201,8 +201,8 @@ namespace P_Logic
                 else if (logic.Hand_Card[5].Rank == CardClass.RANK.None) logic.Stage = LogicClass.STAGE_STATUS.FLOP;
                 else if (logic.Hand_Card[6].Rank == CardClass.RANK.None) logic.Stage = LogicClass.STAGE_STATUS.TURN;
                 else if (logic.Hand_Card[6].Rank != CardClass.RANK.None) logic.Stage = LogicClass.STAGE_STATUS.RIVER;
-                logic.Call_РЎriterion = game.Call_РЎriterion;
-                logic.Raise_Criterion = game.Raise_РЎriterion;
+                logic.Call_Сriterion = game.Call_Сriterion;
+                logic.Raise_Criterion = game.Raise_Сriterion;
 
 
                 ComboBox combo_box = new ComboBox();
@@ -339,3 +339,4 @@ namespace P_Logic
         }
     }
 }
+
