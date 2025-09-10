@@ -1,4 +1,4 @@
-﻿/r:System
+/r:System
 /r:System.Core
 /r:Microsoft.CSharp
 /r:System.ValueTuple.dll

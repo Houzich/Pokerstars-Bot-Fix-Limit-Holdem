@@ -889,3 +889,4 @@ void PCD_ReadPMA(USB_TypeDef  *USBx, uint8_t *pbUsrBuf, uint16_t wPMABufAddr, ui
 #endif /* __STM32F3xx_HAL_PCD_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

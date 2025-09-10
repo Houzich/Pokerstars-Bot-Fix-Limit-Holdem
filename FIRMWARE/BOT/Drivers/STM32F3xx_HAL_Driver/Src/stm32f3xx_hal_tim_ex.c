@@ -2800,3 +2800,4 @@ static void TIM_OC6_SetConfig(TIM_TypeDef *TIMx,
   */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -312,7 +312,7 @@ namespace My_Math
             {
                 Finance.Money player_stack = table.Finance.Stacks.Player[i];
                 Finance.Money player_bets = table.Finance.Bets.Player[i];
-                Draw_Ð¡ircle(Color.Yellow, sett.Player[i].Point_Button);
+                Draw_Ñircle(Color.Yellow, sett.Player[i].Point_Button);
                 Draw_Rectangle(Color.Red, sett.Player[i].Bet.Search_Rectangle);
                 Draw_Rectangle(Color.Red, sett.Player[i].Stack.Search_Rectangle);
                 //Stacks
@@ -339,19 +339,19 @@ namespace My_Math
             Draw_String_Double(table.Finance.Header.Float, Color.Black, table.Finance.Header.Rectangle.Location, 0, fnt.Height);
             Draw_Rectangle(Color.Green, table.Finance.Header.Rectangle);
             //My Course_______________________________________________________________
-            Draw_Ð¡ircle(Color.Yellow, sett.My_Course.Point);
+            Draw_Ñircle(Color.Yellow, sett.My_Course.Point);
             if (table.My_Course == MY_COURSE.OK)
                 Draw_String("COURSE", Color.Red, sett.My_Course.Point, 0, -fnt.Height);
             //My Course Call/Fold_______________________________________________________________
-            Draw_Ð¡ircle(Color.Yellow, sett.My_Course_Call.Point);
+            Draw_Ñircle(Color.Yellow, sett.My_Course_Call.Point);
             if (table.My_Course_Call != MY_COURSE.OK)
                 Draw_String("FOLD/CALL", Color.Red, sett.My_Course_Call.Point, 0, -fnt.Height);
             //Accelerate Fold_______________________________________________________________
-            Draw_Ð¡ircle(Color.Yellow, sett.Accelerate_Fold.Point);
+            Draw_Ñircle(Color.Yellow, sett.Accelerate_Fold.Point);
             if (table.Accelerate_Fold == MY_COURSE.OK)
                 Draw_String("ACCELERATE FOLD", Color.Red, sett.Accelerate_Fold.Point, 0, -fnt.Height);
             //Accelerate Check_______________________________________________________________
-            Draw_Ð¡ircle(Color.Yellow, sett.Accelerate_Check.Point);
+            Draw_Ñircle(Color.Yellow, sett.Accelerate_Check.Point);
             if (table.Accelerate_Check == MY_COURSE.OK)
                 Draw_String("ACCELERATE CHECK/FOLD", Color.Red, sett.Accelerate_Check.Point, 0, -fnt.Height);
 
@@ -365,13 +365,13 @@ namespace My_Math
                 //Graphics gr = pictureBox1.CreateGraphics();
                 for (int i = 0; i < sett_batch_cards.Length; i++)
                 {
-                    Draw_Ð¡ircle(Color.Red, sett_batch_cards[i].Pixel.Suit.Point);
-                    Draw_Ð¡ircle(Color.Yellow, sett_batch_cards[i].Pixel.Back.Point);
+                    Draw_Ñircle(Color.Red, sett_batch_cards[i].Pixel.Suit.Point);
+                    Draw_Ñircle(Color.Yellow, sett_batch_cards[i].Pixel.Back.Point);
                     Draw_Rectangle(Color.Red, sett_batch_cards[i].Rectangle_Rank);
                 }
 
             }
-            void Draw_Ð¡ircle(Color clr, Point p)
+            void Draw_Ñircle(Color clr, Point p)
             {
                 gr.DrawEllipse(new Pen(clr), p.X - 2, p.Y - 2, 4, 4);
             }
@@ -483,7 +483,7 @@ namespace My_Math
                 }
             }
 
-            /*Ñ€Ð°ÑÐ¿Ð¾Ð·Ð½Ð°ÐµÐ¼ Ð²ÑÐµ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð½Ð° ÑÐºÑ€Ð¸Ð½Ðµ*/
+            /*ðàñïîçíàåì âñå êàðòû íà ñêðèíå*/
             static public void Recognize(Bitmap btm, PlayCards PlayCards)
             {
                 lock (locker)
@@ -711,3 +711,4 @@ namespace My_Math
 
     }
 }
+

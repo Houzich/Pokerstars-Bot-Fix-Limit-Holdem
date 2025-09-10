@@ -1,4 +1,4 @@
-﻿namespace My_Math
+namespace My_Math
 {
     partial class FormMain
     {

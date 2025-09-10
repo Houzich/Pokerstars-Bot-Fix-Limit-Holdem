@@ -914,3 +914,4 @@ void     HAL_DBGMCU_DisableDBGStandbyMode(void);
 #endif /* __STM32F3xx_HAL_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

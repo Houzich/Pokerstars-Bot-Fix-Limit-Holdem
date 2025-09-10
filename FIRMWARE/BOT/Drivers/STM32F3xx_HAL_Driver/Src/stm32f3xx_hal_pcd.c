@@ -1334,3 +1334,4 @@ PCD_StateTypeDef HAL_PCD_GetState(PCD_HandleTypeDef *hpcd)
 #endif /* HAL_PCD_MODULE_ENABLED */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

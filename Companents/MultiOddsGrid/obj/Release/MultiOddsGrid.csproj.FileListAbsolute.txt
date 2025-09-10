@@ -6,3 +6,4 @@ D:\BOT\Companents\MultiOddsGrid\obj\Release\MultiOddsGrid.csproj.CoreCompileInpu
 D:\BOT\Companents\MultiOddsGrid\obj\Release\MultiOddsGrid.dll
 D:\BOT\Companents\MultiOddsGrid\obj\Release\MultiOddsGrid.pdb
 D:\BOT\Companents\MultiOddsGrid\obj\Release\MultiOddsGrid.csprojAssemblyReference.cache
+

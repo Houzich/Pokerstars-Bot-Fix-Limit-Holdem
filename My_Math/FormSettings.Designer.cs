@@ -1,4 +1,4 @@
-п»їnamespace My_Math
+namespace My_Math
 {
     partial class FormSettings
     {
@@ -293,11 +293,11 @@
             // 
             this.comboBox_Suit_Card.FormattingEnabled = true;
             this.comboBox_Suit_Card.Items.AddRange(new object[] {
-            "Hearts вЂ” С‡РµСЂРІС‹",
-            "Diamonds вЂ” Р±СѓР±РЅС‹",
-            "Clubs вЂ” С‚СЂРµС„С‹",
-            "Spades вЂ” РїРёРєРё",
-            "None вЂ” РЅРµС‚ РєР°СЂС‚С‹"});
+            "Hearts — червы",
+            "Diamonds — бубны",
+            "Clubs — трефы",
+            "Spades — пики",
+            "None — нет карты"});
             this.comboBox_Suit_Card.Location = new System.Drawing.Point(960, 50);
             this.comboBox_Suit_Card.Name = "comboBox_Suit_Card";
             this.comboBox_Suit_Card.Size = new System.Drawing.Size(100, 21);

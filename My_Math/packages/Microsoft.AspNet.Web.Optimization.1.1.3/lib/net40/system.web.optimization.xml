@@ -1,4 +1,4 @@
-ï»¿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
     <name>System.Web.Optimization</name>
@@ -564,7 +564,7 @@
       <summary>Initializes a new instance of the <see cref="T:System.Web.Optimization.OptimizationSettings" /> class.</summary>
     </member>
     <member name="P:System.Web.Optimization.OptimizationSettings.ApplicationPath">
-      <summary>The physical file path to resolve the â€˜~â€™ token in virtual paths.</summary>
+      <summary>The physical file path to resolve the ‘~’ token in virtual paths.</summary>
       <returns>The physical file path.</returns>
     </member>
     <member name="P:System.Web.Optimization.OptimizationSettings.BundleManifestPath">

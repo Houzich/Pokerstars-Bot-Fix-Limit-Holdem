@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,7 +77,7 @@ namespace My_Math
             }
             catch
             {
-                MessageBox.Show("Test_" + str + ".jpg" + " Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½!");
+                MessageBox.Show("Test_" + str + ".jpg" + " íå íàéäåí!");
             }
         }
 
@@ -88,8 +88,8 @@ namespace My_Math
         private void button_Settings_Click(object sender, EventArgs e)
         {
             Form SettFrm = new FormSettings();
-            SettFrm.Show(); // Ğ¾Ñ‚Ğ¾Ğ±Ñ€Ğ°Ğ¶Ğ°ĞµĞ¼ Form2
-            //this.Hide(); // ÑĞºÑ€Ñ‹Ğ²Ğ°ĞµĞ¼ Form1 (this - Ñ‚ĞµĞºÑƒÑ‰Ğ°Ñ Ñ„Ğ¾Ñ€Ğ¼Ğ°)
+            SettFrm.Show(); // îòîáğàæàåì Form2
+            //this.Hide(); // ñêğûâàåì Form1 (this - òåêóùàÿ ôîğìà)
         }
 
         private void button_Save_Screen_Click(object sender, EventArgs e)
@@ -560,13 +560,13 @@ namespace My_Math
             try
             {
                 Console.WriteLine("================================");
-                Console.WriteLine("=Â Â Â ConnectedÂ toÂ theÂ serverÂ Â Â Â =");
+                Console.WriteLine("=   Connected to the server    =");
                 Console.WriteLine("================================");
-                client = new System.Net.Sockets.TcpClient(); //Â CreateÂ aÂ newÂ connectionÂ Â  
+                client = new System.Net.Sockets.TcpClient(); // Create a new connection   
                 client.ReceiveTimeout = 1000;
                 client.Connect("192.168.0.199", 8080);
             }
-            catch (Exception e) //Â CatchÂ exceptionsÂ Â  
+            catch (Exception e) // Catch exceptions   
             {
                 Console.WriteLine("================================");
                 Console.WriteLine("NO CONNECT");
@@ -578,17 +578,17 @@ namespace My_Math
             Console.WriteLine(message);
 
             NetworkStream stream = client.GetStream();
-            stream.Write(messageBytes, 0, messageBytes.Length); //Â WriteÂ theÂ bytesÂ Â  
+            stream.Write(messageBytes, 0, messageBytes.Length); // Write the bytes   
 
-            Console.WriteLine("WaitingÂ forÂ response...");
-Â 
+            Console.WriteLine("Waiting for response...");
+ 
             int bytesRead;
             messageBytes = new byte[100];
             try
             {
                 bytesRead = stream.Read(messageBytes, 0, messageBytes.Length);
             }
-            catch (Exception e) //Â CatchÂ exceptionsÂ Â  
+            catch (Exception e) // Catch exceptions   
             {
                 stream.Dispose();
                 client.Close();
@@ -598,12 +598,12 @@ namespace My_Math
                 return "NO RESPONSE";
             }
 
-            //Â CleanÂ upÂ Â  
+            // Clean up   
             stream.Dispose();
             client.Close();
 
             string str = Encoding.ASCII.GetString(messageBytes, 0, bytesRead);
-            return str; //Â ReturnÂ responseÂ Â  
+            return str; // Return response   
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -638,3 +638,4 @@ namespace My_Math
         }
     }
 }
+

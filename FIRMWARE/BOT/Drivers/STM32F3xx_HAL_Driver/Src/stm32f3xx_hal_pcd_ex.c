@@ -325,3 +325,4 @@ void PCD_ReadPMA(USB_TypeDef  *USBx, uint8_t *pbUsrBuf, uint16_t wPMABufAddr, ui
 #endif /* HAL_PCD_MODULE_ENABLED */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
