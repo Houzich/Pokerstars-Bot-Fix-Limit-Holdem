@@ -140,3 +140,4 @@ namespace Tools
         public int LastSymbol = 2;
 	}
 }
+

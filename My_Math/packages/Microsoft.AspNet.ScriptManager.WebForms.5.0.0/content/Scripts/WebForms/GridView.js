@@ -34,3 +34,4 @@ function createPropertyStringFromValues_GridView(pageIndex, sortDirection, sortE
     var value = new Array(pageIndex, sortDirection, sortExpression, dataKeys);
     return value.join("|");
 }
+

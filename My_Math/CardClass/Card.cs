@@ -1,4 +1,4 @@
-п»їusing System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -246,10 +246,10 @@ namespace Cards
         public enum SUIT
         {
             [StringValue("None")] None = 0,
-            [StringValue("Hearts")] Hearts = 1, //С‡РµСЂРІС‹
-            [StringValue("Diamonds")] Diamonds = 2, //Р±СѓР±РЅС‹
-            [StringValue("Clubs")] Clubs = 3,   //С‚СЂРµС„С‹
-            [StringValue("Spades")] Spades = 4, //РїРёРєРё
+            [StringValue("Hearts")] Hearts = 1, //червы
+            [StringValue("Diamonds")] Diamonds = 2, //бубны
+            [StringValue("Clubs")] Clubs = 3,   //трефы
+            [StringValue("Spades")] Spades = 4, //пики
         }
 
         public enum RANK
@@ -517,3 +517,4 @@ namespace Cards
 
     }
 }
+

@@ -1,4 +1,4 @@
-﻿namespace P_Logic
+namespace P_Logic
 {
     partial class Form1
     {
@@ -991,4 +991,5 @@
         private System.Windows.Forms.Label label_Stage_Action;
     }
 }
+
 

@@ -896,3 +896,4 @@ function PopOut_Up(scroller) {
         __scrollPanel.interval = window.setInterval("PopOut_Up()", 8);
     }
 }
+

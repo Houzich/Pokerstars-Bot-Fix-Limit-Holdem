@@ -1,4 +1,4 @@
-Ôªøusing System;
+using System;
 using System.Collections.Generic;
 //using System.ComponentModel;
 //using System.Data;
@@ -80,7 +80,7 @@ namespace My_Math
         /*##################################################################################################################*/
         /*##################################################################################################################*/
         /*##################################################################################################################*/
-        /*—Ä–∞—Å–ø–æ–∑–Ω–∞–µ–º –≤—Å–µ –∫–∞—Ä—Ç—ã –Ω–∞ —Å–∫—Ä–∏–Ω–µ*/
+        /*‡ÒÔÓÁÌ‡ÂÏ ‚ÒÂ Í‡Ú˚ Ì‡ ÒÍËÌÂ*/
         private void Display_Info_On_Form(Recognize.PlayCards PlayCards)
         {
             //--------------------------------------------------------------------------------------
@@ -203,8 +203,8 @@ namespace My_Math
                     Point p = new Point(e.X + distance, e.Y);
                     board.Card[i].Pixel.Suit.Point = p;
                     board.Card[i].Pixel.Back.Point = new Point(p.X + Settings.Graphic_Table.Card_Back_Color_Distance_X, p.Y + Settings.Graphic_Table.Card_Back_Color_Distance_Y);
-                    board.Card[i].Rectangle_Rank = new Rectangle(p.X + Settings.Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Settings.Graphic_Table.Card_Suit_Rank_Distance_Y, Settings.Graphic_Table.–°ard_Rank_Width, Settings.Graphic_Table.–°ard_Rank_Height);
-                    distance += Settings.Graphic_Table.–°ard_On_Board_Distance;
+                    board.Card[i].Rectangle_Rank = new Rectangle(p.X + Settings.Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Settings.Graphic_Table.Card_Suit_Rank_Distance_Y, Settings.Graphic_Table.—ard_Rank_Width, Settings.Graphic_Table.—ard_Rank_Height);
+                    distance += Settings.Graphic_Table.—ard_On_Board_Distance;
                 }
             }
 
@@ -228,7 +228,7 @@ namespace My_Math
                     Point p = new Point(e.X + distance, e.Y);
                     player.Card[i].Pixel.Suit.Point = p;
                     player.Card[i].Pixel.Back.Point = new Point(p.X + Settings.Graphic_Table.Card_Back_Color_Distance_X, p.Y + Settings.Graphic_Table.Card_Back_Color_Distance_Y);
-                    player.Card[i].Rectangle_Rank = new Rectangle(p.X + Settings.Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Settings.Graphic_Table.Card_Suit_Rank_Distance_Y, Settings.Graphic_Table.–°ard_Rank_Width, Settings.Graphic_Table.–°ard_Rank_Height);
+                    player.Card[i].Rectangle_Rank = new Rectangle(p.X + Settings.Graphic_Table.Card_Suit_Rank_Distance_X, p.Y + Settings.Graphic_Table.Card_Suit_Rank_Distance_Y, Settings.Graphic_Table.—ard_Rank_Width, Settings.Graphic_Table.—ard_Rank_Height);
                     distance += Settings.Graphic_Table.Card_Player_Distance;
                 }
             }
@@ -349,7 +349,7 @@ namespace My_Math
             }
             catch
             {
-                MessageBox.Show("Test_" + str + ".jpg" + " –Ω–µ –Ω–∞–π–¥–µ–Ω!");
+                MessageBox.Show("Test_" + str + ".jpg" + " ÌÂ Ì‡È‰ÂÌ!");
             }
         }
         private void Button1_Click(object sender, EventArgs e)
@@ -669,3 +669,4 @@ namespace My_Math
         }
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -275,3 +275,4 @@ namespace Table_Start_Hands
 
     }
 }
+

@@ -1,4 +1,4 @@
-﻿namespace Table_Start_Hands
+namespace Table_Start_Hands
 {
     partial class Table_Start_Hands
     {
@@ -133,3 +133,4 @@
         private System.Windows.Forms.Label label1;
     }
 }
+
