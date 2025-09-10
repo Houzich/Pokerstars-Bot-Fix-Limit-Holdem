@@ -484,3 +484,4 @@ void HAL_DBGMCU_DisableDBGStandbyMode(void)
   */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

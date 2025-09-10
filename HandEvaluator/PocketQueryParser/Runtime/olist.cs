@@ -70,3 +70,4 @@ public class ObjectList
 		return new OListEnumerator(this);
 	}
 }
+

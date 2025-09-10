@@ -780,3 +780,4 @@ static uint8_t USBD_GetLen(uint8_t *buf)
   */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
