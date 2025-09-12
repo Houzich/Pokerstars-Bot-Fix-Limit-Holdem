@@ -568,3 +568,4 @@ static uint8_t  *USBD_HID_GetDeviceQualifierDesc (uint16_t *length)
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

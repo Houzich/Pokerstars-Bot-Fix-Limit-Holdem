@@ -311,3 +311,4 @@ uint8_t *  USBD_FS_InterfaceStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *l
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

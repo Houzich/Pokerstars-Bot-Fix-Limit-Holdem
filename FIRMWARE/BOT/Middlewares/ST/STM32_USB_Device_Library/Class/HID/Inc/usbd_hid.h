@@ -147,3 +147,4 @@ uint32_t USBD_HID_GetPollingInterval (USBD_HandleTypeDef *pdev);
   
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

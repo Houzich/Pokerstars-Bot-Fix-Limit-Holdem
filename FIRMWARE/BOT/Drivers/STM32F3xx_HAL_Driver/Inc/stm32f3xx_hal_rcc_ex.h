@@ -3842,3 +3842,4 @@ uint32_t          HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk);
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
 
+

@@ -1340,3 +1340,4 @@ namespace My_Math
         private System.Windows.Forms.Label label_Fint;
     }
 }
+

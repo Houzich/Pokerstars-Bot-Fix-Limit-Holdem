@@ -115,3 +115,4 @@ catch {
     # No Scripts folder
     Write-Host "No scripts folder found"
 }
+

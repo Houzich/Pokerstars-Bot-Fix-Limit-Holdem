@@ -17,3 +17,4 @@ D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.dll
 D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.pdb
 D:\BOT\My_Math\StringEnumClass\obj\Release\StringEnumClass.csprojAssemblyReference.cache
 
+

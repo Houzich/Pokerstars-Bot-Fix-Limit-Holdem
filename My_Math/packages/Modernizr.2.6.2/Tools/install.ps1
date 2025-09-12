@@ -10,3 +10,4 @@ if ($scriptsFolderProjectItem -eq $null) {
 
 # Update the _references.js file
 AddOrUpdate-Reference $scriptsFolderProjectItem $modernizrFileNameRegEx $modernizrFileName
+

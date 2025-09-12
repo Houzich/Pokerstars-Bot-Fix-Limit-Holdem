@@ -4,3 +4,4 @@ param($installPath, $toolsPath, $package, $project)
 
 # Update the _references.js file
 Remove-Reference $scriptsFolderProjectItem $modernizrFileNameRegEx
+

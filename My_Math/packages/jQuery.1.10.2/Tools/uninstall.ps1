@@ -39,3 +39,4 @@ else {
 
 # Update the _references.js file
 Remove-Reference $scriptsFolderProjectItem $jqueryFileNameRegEx
+

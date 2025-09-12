@@ -693,3 +693,4 @@ namespace SettingsClass
         }
     }
 }
+

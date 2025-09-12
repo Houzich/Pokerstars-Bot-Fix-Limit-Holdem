@@ -39,3 +39,4 @@ catch {
 
 # Update the _references.js file
 AddOrUpdate-Reference $scriptsFolderProjectItem $jqueryFileNameRegEx $jqueryFileName
+

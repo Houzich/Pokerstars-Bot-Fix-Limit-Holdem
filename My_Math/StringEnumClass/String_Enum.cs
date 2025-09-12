@@ -260,3 +260,4 @@ namespace StringEnumClass
 
 }
 #endregion
+

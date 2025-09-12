@@ -10,3 +10,4 @@ D:\BOT\My_Math\StringEnumClass\obj\x64\Release\StringEnumClass.dll
 D:\BOT\My_Math\StringEnumClass\obj\x64\Release\StringEnumClass.pdb
 D:\BOT\My_Math\StringEnumClass\obj\x64\Release\StringEnumClass.csprojAssemblyReference.cache
 
+

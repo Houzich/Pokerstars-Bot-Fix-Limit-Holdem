@@ -1755,3 +1755,4 @@ void              HAL_RCC_GetClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct,
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
 
+

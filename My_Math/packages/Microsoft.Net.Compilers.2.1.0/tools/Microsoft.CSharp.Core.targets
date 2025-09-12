@@ -149,3 +149,4 @@
     <CallTarget Targets="$(TargetsTriggeredByCompilation)" Condition="'$(TargetsTriggeredByCompilation)' != ''" />
   </Target>
 </Project>
+

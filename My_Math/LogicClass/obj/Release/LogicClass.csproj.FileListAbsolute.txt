@@ -15,3 +15,4 @@ D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.csproj.CopyComplete
 D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.dll
 D:\BOT\My_Math\LogicClass\obj\Release\LogicClass.pdb
 
+

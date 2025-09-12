@@ -12,3 +12,4 @@ SourceFiles=../Src/main.c;../Src/usb_device.c;../Src/usbd_conf.c;../Src/usbd_des
 HeaderPath=..\Drivers\STM32F3xx_HAL_Driver\Inc;..\Drivers\STM32F3xx_HAL_Driver\Inc\Legacy;..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc;..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc;..\Drivers\CMSIS\Device\ST\STM32F3xx\Include;..\Drivers\CMSIS\Include;
 
 
+

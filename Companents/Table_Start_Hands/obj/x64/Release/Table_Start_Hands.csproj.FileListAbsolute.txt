@@ -10,3 +10,4 @@ D:\BOT\Companents\Table_Start_Hands\obj\x64\Release\Table_Start_Hands.csproj.Cop
 D:\BOT\Companents\Table_Start_Hands\obj\x64\Release\Table_Start_Hands.dll
 D:\BOT\Companents\Table_Start_Hands\obj\x64\Release\Table_Start_Hands.pdb
 
+

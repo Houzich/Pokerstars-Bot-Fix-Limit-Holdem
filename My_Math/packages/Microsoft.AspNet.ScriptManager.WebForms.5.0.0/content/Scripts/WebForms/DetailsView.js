@@ -33,3 +33,4 @@ function createPropertyStringFromValues_DetailsView(pageIndex, dataKeys) {
     return value.join("|");
 }
 
+

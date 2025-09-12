@@ -564,3 +564,4 @@ USBD_StatusTypeDef USBD_LL_DevDisconnected(USBD_HandleTypeDef  *pdev)
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
 
+

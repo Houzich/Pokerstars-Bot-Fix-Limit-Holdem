@@ -1828,3 +1828,4 @@ namespace My_Math
         private System.Windows.Forms.RadioButton radioButton_My_Course_Call;
     }
 }
+

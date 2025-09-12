@@ -16,3 +16,4 @@
     <Copy SourceFiles="@(RoslyCompilerFiles)" DestinationFolder="$(OutDir)roslyn" ContinueOnError="true" SkipUnchangedFiles="true" />
   </Target>
 </Project>
+

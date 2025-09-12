@@ -31,3 +31,4 @@
       <Message Text="No native binary is deployed by the Emgu CV project." Condition="'$(EmguCvDeployMessage)'==''" Importance="High" />
     </Target>
 </Project>
+

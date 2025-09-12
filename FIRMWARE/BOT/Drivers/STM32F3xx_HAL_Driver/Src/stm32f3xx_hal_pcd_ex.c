@@ -326,3 +326,4 @@ void PCD_ReadPMA(USB_TypeDef  *USBx, uint8_t *pbUsrBuf, uint16_t wPMABufAddr, ui
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

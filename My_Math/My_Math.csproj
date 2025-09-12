@@ -205,3 +205,4 @@
     <Error Condition="!Exists('packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets'))" />
   </Target>
 </Project>
+
